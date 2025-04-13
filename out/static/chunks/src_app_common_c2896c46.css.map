@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/lbg/Downloads/Clone-https___bestwallettoken.com_-%28fork%29%202/bestwallettoken-clone/src/app/common.css"],"sourcesContent":[".breadcrumb {\n  padding: 1rem 0rem;\n  margin-bottom: 1rem;\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n\n.breadcrumb span {\n  color: #666;\n  cursor: pointer;\n}\n\n.breadcrumb span:hover {\n  color: #1890ff;\n}\n\n.container {\n    padding: 0 1.5rem;\n    \n\n  /* padding-bottom: 1.5rem;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem; */\n \n}\n.container-chrild {\n  padding-bottom: 1.5rem;\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n \n}\n\n.content-wrapper {\n  padding: 0 0rem;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;AAKA;;;;AAIA;;;;AASA;;;;;;AAOA","debugId":null}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

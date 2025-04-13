@@ -1,0 +1,239 @@
+/* [project]/src/app/juesetting.css [app-client] (css) */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+}
+
+.config-note {
+  margin-top: 16px;
+  color: #000000e0;
+  font-size: 14px;
+}
+
+.form-extra {
+  clear: both;
+  color: #00000073;
+  font-size: 14px;
+  line-height: 1.57143;
+}
+
+.breadcrumb span:first-child {
+  margin-left: 0;
+}
+
+.setting-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 2px #0000001a;
+}
+
+.setting-section {
+  margin-bottom: 24px;
+}
+
+.setting-section h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.template-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.template-btn {
+  padding: 8px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all .3s;
+  margin-bottom: 8px;
+}
+
+.template-btn:hover {
+  border-color: #1677ff;
+  color: #1677ff;
+}
+
+.template-btn.active {
+  background: #1677ff;
+  color: #fff;
+  border-color: #1677ff;
+}
+
+.template-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group .required {
+  color: #ff4d4f;
+  margin-right: 4px;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all .3s;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+  border-color: #1677ff;
+  outline: none;
+  box-shadow: 0 0 0 2px #1677ff1a;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button-group {
+  margin-top: 32px;
+}
+
+.ant-space.ant-space-horizontal {
+  display: flex;
+  gap: 8px;
+}
+
+.ant-btn {
+  height: 32px;
+  padding: 4px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all .2s;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background: #1677ff;
+  border: 1px solid #1677ff;
+  box-shadow: 0 2px #0591ff1a;
+}
+
+.ant-btn-primary:hover {
+  color: #fff;
+  background: #4096ff;
+  border-color: #4096ff;
+}
+
+.ant-btn-default {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px #00000005;
+}
+
+.ant-btn-default:hover {
+  color: #4096ff;
+  border-color: #4096ff;
+}
+
+.save-btn {
+  padding: 8px 24px;
+  background: #1677ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.save-btn:hover {
+  background: #4096ff;
+}
+
+.voice-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.voice-demo {
+  height: 32px;
+}
+
+.device-config-container {
+  padding: 24px;
+}
+
+.header-section {
+  margin-bottom: 24px;
+}
+
+.agent-name {
+  margin-left: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.voice-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.voice-demo {
+  height: 32px;
+  min-width: 300px;
+}
+
+@media screen and (width <= 576px) {
+  .voice-selector[data-v-23b12a17] {
+    gap: 8px;
+  }
+
+  .voice-demo[data-v-23b12a17] {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.memory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.template-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.template-button {
+  margin-bottom: 8px;
+}
+
+
+/*# sourceMappingURL=src_app_juesetting_df93c634.css.map*/

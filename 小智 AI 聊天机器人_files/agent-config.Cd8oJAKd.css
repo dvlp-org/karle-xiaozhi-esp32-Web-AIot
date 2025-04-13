@@ -1,0 +1,63 @@
+.device-config-container[data-v-23b12a17] {
+    padding: 24px
+}
+
+.header-section[data-v-23b12a17] {
+    margin-bottom: 24px
+}
+
+.config-card[data-v-23b12a17] {
+    max-width: 800px;
+    margin: 0 auto
+}
+
+.agent-name[data-v-23b12a17] {
+    margin-left: 8px;
+    color: #666;
+    font-size: 14px
+}
+
+.voice-selector[data-v-23b12a17] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.voice-demo[data-v-23b12a17] {
+    height: 32px;
+    min-width: 300px
+}
+
+@media screen and (max-width: 576px) {
+    .voice-selector[data-v-23b12a17] {
+        gap: 8px
+    }
+
+    .voice-demo[data-v-23b12a17] {
+        width: 100%;
+        min-width: unset
+    }
+}
+
+.memory-header[data-v-23b12a17] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.config-note[data-v-23b12a17] {
+    margin-top: 16px;
+    color: #666;
+    font-size: 14px
+}
+
+.template-buttons[data-v-23b12a17] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.template-button[data-v-23b12a17] {
+    margin-bottom: 8px
+}

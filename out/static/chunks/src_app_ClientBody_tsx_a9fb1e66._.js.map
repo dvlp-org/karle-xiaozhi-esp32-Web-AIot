@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lbg/Downloads/Clone-https___bestwallettoken.com_-%28fork%29%202/bestwallettoken-clone/src/app/ClientBody.tsx"],"sourcesContent":["\"use client\";\n\nimport { useEffect } from \"react\";\n\nexport default function ClientBody({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  // Remove any extension-added classes during hydration\n  useEffect(() => {\n    // This runs only on the client after hydration\n    document.body.className = \"antialiased\";\n  }, []);\n\n  return (\n    <body className=\"antialiased\" suppressHydrationWarning>\n      {children}\n    </body>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;;;AAFA;;AAIe,SAAS,WAAW,EACjC,QAAQ,EAGT;;IACC,sDAAsD;IACtD,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;gCAAE;YACR,+CAA+C;YAC/C,SAAS,IAAI,CAAC,SAAS,GAAG;QAC5B;+BAAG,EAAE;IAEL,qBACE,6LAAC;QAAK,WAAU;QAAc,wBAAwB;kBACnD;;;;;;AAGP;GAhBwB;KAAA","debugId":null}},
+    {"offset": {"line": 42, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

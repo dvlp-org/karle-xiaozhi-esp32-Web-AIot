@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$BEST Token Presale: Best Crypto Presale & Coin Launch 2025</title>
+  <meta name="description" content="Best Wallet Token powers the fastest-growing mobile crypto wallet ecosystem. Buy $BEST token in presale to enjoy exclusive holder benefits!">
+  <link rel="icon" href="/public/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('/public/fonts/Poppins-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      src: url('/public/fonts/Poppins-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bestblue: #0c8dde;
+      --bestblue-dark: #16263f;
+      --bestpink: #da568b;
+      --bestpink-light: #ed8cbf;
+      --bestgold: #d7aa3a;
+      --bestgold-light: #e9d99f;
+      --bestgray: #96aebd;
+      --bestgray-light: #c8d5dd;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .bg-bestblue {
+      background-color: var(--bestblue);
+    }
+
+    .bg-bestblue-dark {
+      background-color: var(--bestblue-dark);
+    }
+
+    .text-bestblue {
+      color: var(--bestblue);
+    }
+
+    .text-bestgold {
+      color: var(--bestgold);
+    }
+
+    .text-bestgray-light {
+      color: var(--bestgray-light);
+    }
+
+    .border-bestblue {
+      border-color: var(--bestblue);
+    }
+
+    .hover\:bg-bestblue\/90:hover {
+      background-color: rgba(12, 141, 222, 0.9);
+    }
+
+    .hover\:bg-bestblue\/20:hover {
+      background-color: rgba(12, 141, 222, 0.2);
+    }
+
+    .bg-bestblue\/20 {
+      background-color: rgba(12, 141, 222, 0.2);
+    }
+
+    .bg-bestblue-dark\/90 {
+      background-color: rgba(22, 38, 63, 0.9);
+    }
+
+    .bg-bestblue-dark\/50 {
+      background-color: rgba(22, 38, 63, 0.5);
+    }
+
+    .bg-bestblue-dark\/60 {
+      background-color: rgba(22, 38, 63, 0.6);
+    }
+
+    .border-bestblue\/30 {
+      border-color: rgba(12, 141, 222, 0.3);
+    }
+
+    .backdrop-blur-sm {
+      backdrop-filter: blur(4px);
+    }
+
+    .bg-banner-desktop {
+      background-image: url('/public/images/banner-desktop-bg.webp');
+    }
+
+    .bg-presale-airdrop {
+      background-image: url('/public/images/presale-airdrop-bg.webp');
+    }
+
+    .nav-link {
+      position: relative;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: var(--bestgold);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--bestgold);
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .btn-primary {
+      background-color: var(--bestblue);
+      color: white;
+      border-radius: 0.375rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: background-opacity 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(12, 141, 222, 0.9);
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: var(--bestblue);
+      border: 1px solid var(--bestblue);
+      border-radius: 0.375rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(12, 141, 222, 0.05);
+    }
+
+    /* Animation classes */
+    @keyframes float-up-down {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+
+    @keyframes float-up-down-2 {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(15px) rotate(-10deg); }
+    }
+
+    @keyframes float-up-down-3 {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(20px) rotate(15deg); }
+    }
+
+    .float-animation-1 {
+      animation: float-up-down 4s infinite ease-in-out;
+    }
+
+    .float-animation-2 {
+      animation: float-up-down-2 5s infinite ease-in-out;
+      animation-delay: 0.5s;
+    }
+
+    .float-animation-3 {
+      animation: float-up-down-3 6s infinite ease-in-out;
+      animation-delay: 1s;
+    }
+
+    .float-animation-4 {
+      animation: float-up-down 7s infinite ease-in-out;
+    }
+
+    .float-animation-5 {
+      animation: float-up-down-3 8s infinite ease-in-out;
+      animation-delay: 1.5s;
+    }
+
+    .float-animation-6 {
+      animation: float-up-down-2 6s infinite ease-in-out;
+      animation-delay: 0.8s;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Info popup animation */
+    .info-popup {
+      transition: opacity 0.3s, transform 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .info-popup.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <main>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5" id="navbar">
+      <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+        <a href="/" class="flex items-center">
+          <img src="/public/images/logo.svg" alt="Best Wallet Token" class="h-8 w-auto">
+          <span class="ml-2 text-white font-semibold text-lg hidden md:block">小智AIoT·智联开发者</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#benefits" class="nav-link">优势</a>
+          <a href="#ecosystem" class="nav-link">生态系统</a>
+          <a href="#roadmap" class="nav-link">路线图</a>
+          <a href="https://bestwallet.com/documents/litepaper.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">白皮书</a>
+          <a href="https://coinsult.net/projects/best-wallet" target="_blank" rel="noopener noreferrer" class="nav-link">审计</a>
+          <a href="https://support.bestwallet.com/en/" target="_blank" rel="noopener noreferrer" class="nav-link">支持</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="hidden md:flex items-center space-x-3">
+            <a href="https://twitter.com/bestwallethq" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="/public/images/icons/twitter.svg" alt="Twitter" width="24" height="24" class="text-white hover:text-bestgold transition-colors">
+            </a>
+            <a href="https://discord.gg/bestwallet" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <img src="/public/images/icons/discord.svg" alt="Discord" width="24" height="24" class="text-white hover:text-bestgold transition-colors">
+            </a>
+            <a href="https://t.me/Best_Wallet_Announcements" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <img src="/public/images/icons/telegram.svg" alt="Telegram" width="24" height="24" class="text-white hover:text-bestgold transition-colors">
+            </a>
+          </div>
+
+          <div class="relative" id="language-dropdown">
+            <button class="flex items-center text-white px-3 py-1.5 rounded-md hover:bg-bestblue/20 transition" id="language-button">
+              <span class="mr-1">ZH</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="hidden absolute right-0 mt-2 bg-bestblue-dark text-white border-bestblue rounded-md shadow-lg" id="language-menu">
+              <button class="block w-full text-left px-4 py-2 hover:bg-bestblue/20" data-lang="en">英文</button>
+              <button class="block w-full text-left px-4 py-2 hover:bg-bestblue/20" data-lang="zh">中文</button>
+            </div>
+          </div>
+
+          <button class="bg-white text-bestblue rounded-md px-4 py-1.5 text-sm font-semibold hover:bg-opacity-90 transition">开放平台</button>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white" id="mobile-menu-button" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden hidden bg-bestblue-dark/90 backdrop-blur-sm absolute top-full left-0 w-full p-4" id="mobile-menu">
+        <div class="flex flex-col space-y-4">
+          <a href="#benefits" class="text-white hover:text-bestgold transition-colors">优势</a>
+          <a href="#ecosystem" class="text-white hover:text-bestgold transition-colors">生态系统</a>
+          <a href="#roadmap" class="text-white hover:text-bestgold transition-colors">路线图</a>
+          <a href="https://bestwallet.com/documents/litepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-white hover:text-bestgold transition-colors">白皮书</a>
+          <a href="https://coinsult.net/projects/best-wallet" target="_blank" rel="noopener noreferrer" class="text-white hover:text-bestgold transition-colors">审计</a>
+          <a href="https://support.bestwallet.com/en/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-bestgold transition-colors">支持</a>
+          <div class="flex space-x-4 pt-2">
+            <a href="https://twitter.com/bestwallethq" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="/public/images/icons/twitter.svg" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="https://discord.gg/bestwallet" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <img src="/public/images/icons/discord.svg" alt="Discord" width="24" height="24">
+            </a>
+            <a href="https://t.me/Best_Wallet_Announcements" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <img src="/public/images/icons/telegram.svg" alt="Telegram" width="24" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-banner-desktop bg-cover bg-center min-h-screen pt-28 pb-16 overflow-hidden">
+      <!-- Info Button -->
+      <div class="fixed bottom-4 left-4 z-50">
+        <button id="info-button" class="bg-bestblue hover:bg-bestblue/90 text-white rounded-full p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4" />
+            <path d="M12 8h.01" />
+          </svg>
+        </button>
+
+        <div id="info-popup" class="info-popup absolute bottom-12 left-0 bg-bestblue-dark/90 backdrop-blur-sm text-bestblue p-4 rounded-lg shadow-lg w-64">
+          <h3 class="font-semibold mb-2">关于本站</h3>
+          <p class="text-sm mb-2">作者: Best Wallet Token Team</p>
+          <p class="text-sm mb-2">版本: 1.0.0</p>
+          <p class="text-sm">©2024 Best Wallet Token. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-bestblue-dark/50"></div>
+
+      <!-- Floating coin animations -->
+      <div class="absolute top-24 right-1/3 float-animation-1">
+        <img src="/public/images/shapes/coin.svg" alt="Floating coin" width="60" height="60">
+      </div>
+
+      <div class="absolute top-40 left-1/4 float-animation-2">
+        <img src="/public/images/shapes/coin.svg" alt="Floating coin" width="40" height="40">
+      </div>
+
+      <div class="absolute bottom-40 right-1/4 float-animation-3">
+        <img src="/public/images/shapes/coin.svg" alt="Floating coin" width="50" height="50">
+      </div>
+
+      <!-- Floating shapes -->
+      <div class="absolute top-1/3 left-10 md:left-20 float-animation-4">
+        <img src="/public/images/shapes/shape1.svg" alt="Shape" width="80" height="80">
+      </div>
+
+      <div class="absolute bottom-1/4 right-10 md:right-20 float-animation-5">
+        <img src="/public/images/shapes/shape2.svg" alt="Shape" width="100" height="100">
+      </div>
+
+      <div class="absolute bottom-1/3 left-1/4 float-animation-6">
+        <img src="/public/images/shapes/shape3.svg" alt="Shape" width="70" height="70">
+      </div>
+
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Left column - Content -->
+          <div class="text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              智创无界， <span class="text-bestgold">码</span>见未来
+            </h1>
+            <h2 class="text-xl md:text-2xl mb-8">
+              Intelligent Creation Without Limits, Code Shapes the Future
+            </h2>
+
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" class="mr-2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <span class="ml-2">Rated 4.5</span>
+            </div>
+          </div>
+
+          <!-- Right column - Buy form -->
+          <div class="bg-bestblue-dark/90 p-6 rounded-2xl border border-bestblue/30 shadow-xl">
+            <h2 class="text-2xl font-semibold text-white text-center mb-4">
+              欢迎进入小智AIoT开发者世界！
+            </h2>
+            <h3 class="text-lg text-white text-center mb-6">
+              ALL In Now!
+            </h3>
+
+            <div class="grid grid-cols-4 gap-2 mb-4">
+              <div class="bg-bestblue-dark p-3 rounded-lg border border-bestblue/30 text-center">
+                <div class="text-white text-2xl font-semibold" id="days">00</div>
+                <div class="text-bestgray-light text-xs">开发者</div>
+              </div>
+              <div class="bg-bestblue-dark p-3 rounded-lg border border-bestblue/30 text-center">
+                <div class="text-white text-2xl font-semibold" id="hours">08</div>
+                <div class="text-bestgray-light text-xs">项目数</div>
+              </div>
+              <div class="bg-bestblue-dark p-3 rounded-lg border border-bestblue/30 text-center">
+                <div class="text-white text-2xl font-semibold" id="minutes">51</div>
+                <div class="text-bestgray-light text-xs">硬件数</div>
+              </div>
+              <div class="bg-bestblue-dark p-3 rounded-lg border border-bestblue/30 text-center">
+                <div class="text-white text-2xl font-semibold" id="seconds">26</div>
+                <div class="text-bestgray-light text-xs">活跃数</div>
+              </div>
+            </div>
+
+            <div class="text-center text-sm text-bestgray-light mb-6">
+              UNTIL GITHUB INCREASE
+            </div>
+
+            <div class="bg-bestblue/20 p-3 rounded-lg text-center mb-6">
+              <div class="text-white text-lg font-semibold mt-1">https://github.com/78/xiaozhi-esp32</div>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <button class="w-full btn-primary py-2.5">
+                Download the finished product package
+              </button>
+              <button class="w-full btn-secondary py-2.5">
+                I want to register
+              </button>
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="text-sm text-bestblue hover:underline">
+                Not returning to use?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+  </main>
+
+
+</body>
+</html>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Buy $BEST Token Now!</h2>
+          <h3 class="text-xl md:text-2xl font-semibold text-bestblue-dark mb-6">Get Best Wallet Token Benefits</h3>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Best Wallet is primed to shake up the rapidly growing non-custodial wallet market valued at $11 billion.
+            Buy tokens in the $BEST crypto presale above or directly in-app to enjoy unrivalled holder benefits!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+            <div class="flex flex-col items-center text-center">
+              <div class="mb-4">
+                <img src="/public/images/benefits/early-access.svg" alt="Early Access to New Projects" width="64" height="64" class="h-16 w-16 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-bestblue-dark mb-3">Early Access to New Projects</h3>
+              <p class="text-gray-600">$BEST gives you exclusive access to the best crypto presales and new projects before they launch.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+            <div class="flex flex-col items-center text-center">
+              <div class="mb-4">
+                <img src="/public/images/benefits/reduced-fees.svg" alt="Reduced Transaction Fees" width="64" height="64" class="h-16 w-16 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-bestblue-dark mb-3">Reduced Transaction Fees</h3>
+              <p class="text-gray-600">Benefit from reduced transaction fees across the Best Wallet ecosystem when you hold the $BEST token.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+            <div class="flex flex-col items-center text-center">
+              <div class="mb-4">
+                <img src="/public/images/benefits/staking-rewards.svg" alt="Higher Staking Rewards" width="64" height="64" class="h-16 w-16 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-bestblue-dark mb-3">Higher Staking Rewards</h3>
+              <p class="text-gray-600">Hold $BEST tokens to gain higher APY staking opportunities in our staking aggregator.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+            <div class="flex flex-col items-center text-center">
+              <div class="mb-4">
+                <img src="/public/images/benefits/governance.svg" alt="Community Governance" width="64" height="64" class="h-16 w-16 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-bestblue-dark mb-3">Community Governance</h3>
+              <p class="text-gray-600">Vote on key decisions within the $BEST ecosystem. Governance rights mean you control the project's direction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 flex flex-wrap justify-center gap-8">
+          <img src="https://ext.same-assets.com/2290528396/189994652.svg" alt="Techopedia" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/3150269376.svg" alt="Bitcoinist" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/1399514988.svg" alt="Cryptopolitan" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/325129437.svg" alt="99bitcoins" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/2515393851.svg" alt="readwrite" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/989499846.svg" alt="cointelegraph" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+          <img src="https://ext.same-assets.com/2290528396/3004305911.svg" alt="Cryptonews" width="120" height="40" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section id="ecosystem" class="py-20 relative overflow-hidden">
+      <!-- Background elements -->
+      <div class="absolute -left-40 top-1/4 opacity-10">
+        <img src="/public/images/ui-elements/circle-pattern.svg" alt="Background design" width="300" height="300">
+      </div>
+      <div class="absolute -right-40 bottom-1/4 opacity-10">
+        <img src="/public/images/ui-elements/circle-pattern.svg" alt="Background design" width="300" height="300">
+      </div>
+
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">
+            The Best Wallet <span class="text-bestblue">Ecosystem</span>
+          </h2>
+
+          <div class="flex flex-wrap justify-center gap-6 md:gap-8 mb-8 fade-in">
+            <div class="flex flex-col items-center">
+              <img src="/public/images/tokens/best-wallet.svg" alt="Best Wallet" width="60" height="60" class="mb-2">
+              <span class="text-bestblue-dark font-semibold">Best Wallet</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img src="/public/images/tokens/best-dex.svg" alt="Best DEX" width="60" height="60" class="mb-2">
+              <span class="text-bestblue-dark font-semibold">Best DEX</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img src="/public/images/tokens/best-card.svg" alt="Best Card" width="60" height="60" class="mb-2">
+              <span class="text-bestblue-dark font-semibold">Best Card</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simplified Tabs for HTML version -->
+        <div class="w-full">
+          <div class="flex flex-wrap justify-center mb-8 gap-2">
+            <button class="px-4 py-2 rounded-md bg-bestblue text-white tab-button active" data-tab="buy">Buy</button>
+            <button class="px-4 py-2 rounded-md bg-gray-200 text-gray-700 tab-button" data-tab="store">Store</button>
+            <button class="px-4 py-2 rounded-md bg-gray-200 text-gray-700 tab-button" data-tab="deposit">Deposit</button>
+            <button class="px-4 py-2 rounded-md bg-gray-200 text-gray-700 tab-button" data-tab="send">Send</button>
+            <button class="px-4 py-2 rounded-md bg-gray-200 text-gray-700 tab-button" data-tab="swap">Swap</button>
+          </div>
+
+          <div class="tab-content" id="buy-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Buy</h3>
+                <p class="text-gray-600 mb-6">Through our integration of Onramper, get the best exchange rates and lowest processing fees when buying crypto, including Bitcoin, Ethereum, Solana, and more! Hold $BEST tokens for reduced transaction fees when purchasing.</p>
+                <div class="flex flex-wrap gap-3 mb-6">
+                  <div class="flex items-center bg-gray-100 rounded-full px-3 py-1">
+                    <img src="/public/images/crypto-logos/ethereum.svg" alt="Ethereum" class="w-5 h-5 mr-2">
+                    <span class="text-sm">Ethereum</span>
+                  </div>
+                  <div class="flex items-center bg-gray-100 rounded-full px-3 py-1">
+                    <img src="/public/images/crypto-logos/bitcoin.svg" alt="Bitcoin" class="w-5 h-5 mr-2">
+                    <span class="text-sm">Bitcoin</span>
+                  </div>
+                  <div class="flex items-center bg-gray-100 rounded-full px-3 py-1">
+                    <img src="/public/images/crypto-logos/solana.svg" alt="Solana" class="w-5 h-5 mr-2">
+                    <span class="text-sm">Solana</span>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="/_next/image?url=%2Fbestwallet%2Fimages%2Fstore-1.png&w=640&q=75" alt="Buy feature" class="w-full">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="store-content">
+            <!-- Store content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Store</h3>
+                <p class="text-gray-600 mb-6">Securely hold all your digital assets in one app and manage your entire crypto portfolio. Best Wallet uses decentralized account recovery and advanced anti-fraud mechanisms.</p>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="/_next/image?url=%2Fbestwallet%2Fimages%2Fstore-2.png&w=640&q=75" alt="Store feature" class="w-full">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="deposit-content">
+            <!-- Deposit content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Deposit</h3>
+                <p class="text-gray-600 mb-6">Deposit all your crypto funds from centralized exchanges or another crypto wallet into Best Wallet, with thousands of supported tokens and over 50 different chains.</p>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="/_next/image?url=%2Fbestwallet%2Fimages%2Fstore-3.png&w=640&q=75" alt="Deposit feature" class="w-full">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="send-content">
+            <!-- Send content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Send</h3>
+                <p class="text-gray-600 mb-6">Send your crypto seamlessly, with useful features like an address book for easy repeat transactions and clear breakdowns of gas fees.</p>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="/_next/image?url=%2Fbestwallet%2Fimages%2Fstore-4.png&w=640&q=75" alt="Send feature" class="w-full">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="swap-content">
+            <!-- Swap content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Swap</h3>
+                <p class="text-gray-600 mb-6">Swap your tokens directly within the app, including cross-chain swaps using an autorouter to find the best exchange rates and lowest fees. Hold $BEST tokens for substantially reduced swap fees.</p>
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="/_next/image?url=%2Fbestwallet%2Fimages%2Fstore-5.png&w=640&q=75" alt="Swap feature" class="w-full">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="mt-20">
+          <h3 class="text-2xl font-semibold text-center mb-10">What People Are Saying</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <img src="/public/images/testimonials/user1.jpg" alt="Alex Johnson" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <h4 class="font-semibold">Alex Johnson</h4>
+                  <p class="text-sm text-gray-500">Crypto Enthusiast, CryptoDaily</p>
+                </div>
+              </div>
+              <p class="text-gray-600">With Upcoming Tokens, Best Wallet has raised the bar for crypto wallet functionality. The UI is intuitive and the security features are impressive.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <img src="/public/images/testimonials/user2.jpg" alt="Sarah Chen" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <h4 class="font-semibold">Sarah Chen</h4>
+                  <p class="text-sm text-gray-500">DeFi Researcher, Cryptonews</p>
+                </div>
+              </div>
+              <p class="text-gray-600">Easy to use, endlessly capable... The standout app in crypto this year. The cross-chain functionality is particularly impressive.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <img src="/public/images/testimonials/user3.jpg" alt="Michael Torres" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <h4 class="font-semibold">Michael Torres</h4>
+                  <p class="text-sm text-gray-500">Blockchain Developer, CoinTelegraph</p>
+                </div>
+              </div>
+              <p class="text-gray-600">Innovative, secure and intuitive - Best Wallet is a major new player in the Crypto Wallets space. Its security features set a new standard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Roadmap</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            The Best Wallet ecosystem project roadmap lays out all the key development steps that have been completed and are due to be delivered.
+          </p>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="relative mb-12">
+          <div class="absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
+          <div class="absolute top-1/2 left-0 w-1/2 h-1 bg-bestblue -translate-y-1/2"></div>
+
+          <div class="relative flex justify-between">
+            <div class="flex flex-col items-center">
+              <div class="w-6 h-6 rounded-full z-10 border-2 bg-bestblue border-bestblue"></div>
+              <span class="text-sm mt-2 font-medium text-gray-500">Phase 1</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-6 h-6 rounded-full z-10 border-2 bg-bestblue border-bestblue"></div>
+              <span class="text-sm mt-2 font-medium text-gray-500">Phase 2</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-6 h-6 rounded-full z-10 border-2 bg-bestblue border-bestblue"></div>
+              <span class="text-sm mt-2 font-medium text-bestblue">Phase 3</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-6 h-6 rounded-full z-10 border-2 bg-white border-gray-300"></div>
+              <span class="text-sm mt-2 font-medium text-gray-400">Phase 4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex-1 fade-in">
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-3 text-bestblue-dark">PHASE 1</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Project Development</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Initial Website Launch</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Platform Security</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Branding Released</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Legal Entity Established</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Litepaper Released</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1 fade-in">
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-3 text-bestblue-dark">PHASE 2</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Best Wallet Development</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Community Building</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Audit Completed</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">CEX Discussions</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Public Presale</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-500">
+                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm">Marketing Campaign</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1 fade-in">
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-3 text-bestblue">PHASE 3</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-bestblue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Multi-Chain Wallet Launch</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-bestblue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Staking Platform Live</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-bestblue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">DEX Aggregator Launch</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-bestblue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">CEX Listings</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-bestblue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Cross-Chain Bridge Integration</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1 fade-in">
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-3 text-bestblue-dark">PHASE 4</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Best Card Launch</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Mobile App Features Extension</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Governance Implementation</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Global Marketing Campaign</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Additional CEX Listings</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm">Best Swap Upgrade</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-presale-airdrop bg-cover bg-center text-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">
+            Best Wallet <span class="text-bestgold">Token Airdrop</span>
+          </h2>
+          <div class="flex justify-center fade-in">
+            <button class="btn-primary text-lg px-10 py-3 mt-4">
+              Join Token Airdrop
+            </button>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <h3 class="text-2xl font-semibold mb-6 text-center fade-in">
+            Frequently asked questions
+          </h3>
+
+          <div class="accordion">
+            <div class="bg-bestblue-dark/60 backdrop-blur mb-4 rounded-lg overflow-hidden border-none fade-in">
+              <div class="accordion-header px-5 py-4 hover:bg-bestblue-dark/80 transition-colors text-left cursor-pointer">
+                What is Best Wallet?
+                <svg class="float-right w-5 h-5 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+              <div class="accordion-content px-5 py-4 text-gray-200 hidden">
+                Best Wallet is a non-custodial mobile cryptocurrency wallet application that allows users to securely store, manage, and transact with multiple cryptocurrencies. It offers a range of features including cross-chain swaps, staking, and early access to presale tokens.
+              </div>
+            </div>
+
+            <div class="bg-bestblue-dark/60 backdrop-blur mb-4 rounded-lg overflow-hidden border-none fade-in">
+              <div class="accordion-header px-5 py-4 hover:bg-bestblue-dark/80 transition-colors text-left cursor-pointer">
+                How do I earn $BEST tokens?
+                <svg class="float-right w-5 h-5 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+              <div class="accordion-content px-5 py-4 text-gray-200 hidden">
+                You can acquire $BEST tokens by participating in the presale on our website using cryptocurrency or a credit card. Once the presale ends, $BEST will be available on various exchanges.
+              </div>
+            </div>
+
+            <div class="bg-bestblue-dark/60 backdrop-blur mb-4 rounded-lg overflow-hidden border-none fade-in">
+              <div class="accordion-header px-5 py-4 hover:bg-bestblue-dark/80 transition-colors text-left cursor-pointer">
+                How do I register for the Best Airdrop?
+                <svg class="float-right w-5 h-5 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+              <div class="accordion-content px-5 py-4 text-gray-200 hidden">
+                There is currently no active airdrop for $BEST tokens. The primary way to acquire tokens is through the presale. Always be cautious of scam airdrops claiming to distribute $BEST tokens.
+              </div>
+            </div>
+
+            <div class="bg-bestblue-dark/60 backdrop-blur mb-4 rounded-lg overflow-hidden border-none fade-in">
+              <div class="accordion-header px-5 py-4 hover:bg-bestblue-dark/80 transition-colors text-left cursor-pointer">
+                How do I stake tokens bought in the $BEST crypto presale?
+                <svg class="float-right w-5 h-5 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+              <div class="accordion-content px-5 py-4 text-gray-200 hidden">
+                Once you've purchased $BEST tokens in the presale, you'll be able to stake them through our staking platform after it launches. Details about staking features, APY rates, and bonuses will be announced before the staking platform goes live.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bestblue-dark text-white">
+      <div class="container mx-auto px-4 py-12 md:px-6">
+        <div class="mb-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div class="col-span-1">
+            <a href="/" class="flex items-center mb-6">
+              <img src="/public/images/logo.svg" alt="Best Wallet Token" width="40" height="40" class="h-8 w-auto">
+              <span class="ml-2 text-white font-semibold text-lg">Best Wallet</span>
+            </a>
+            <p class="text-sm text-gray-300 mb-4">
+              A fast and secure non-custodial wallet for managing your crypto portfolio.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://twitter.com/bestwallethq" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="text-gray-300 hover:text-white transition-colors">
+                <img src="/public/images/icons/twitter.svg" alt="Twitter" width="20" height="20">
+              </a>
+              <a href="https://discord.gg/bestwallet" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="text-gray-300 hover:text-white transition-colors">
+                <img src="/public/images/icons/discord.svg" alt="Discord" width="20" height="20">
+              </a>
+              <a href="https://t.me/Best_Wallet_Announcements" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="text-gray-300 hover:text-white transition-colors">
+                <img src="/public/images/icons/telegram.svg" alt="Telegram" width="20" height="20">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <h3 class="font-semibold text-lg mb-4">Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Benefits</a>
+              </li>
+              <li>
+                <a href="#ecosystem" class="text-gray-300 hover:text-white transition-colors">Ecosystem</a>
+              </li>
+              <li>
+                <a href="#roadmap" class="text-gray-300 hover:text-white transition-colors">Roadmap</a>
+              </li>
+              <li>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-1">
+            <h3 class="font-semibold text-lg mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://bestwallet.com/documents/litepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Litepaper</a>
+              </li>
+              <li>
+                <a href="https://coinsult.net/projects/best-wallet" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Audit</a>
+              </li>
+              <li>
+                <a href="/privacy" class="text-gray-300 hover:text-white transition-colors">Privacy</a>
+              </li>
+              <li>
+                <a href="/terms" class="text-gray-300 hover:text-white transition-colors">Terms</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-1">
+            <h3 class="font-semibold text-lg mb-4">Contact</h3>
+            <p class="text-sm text-gray-300 mb-2">
+              For support, please visit our help center:
+            </p>
+            <a href="https://support.bestwallet.com/en/" target="_blank" rel="noopener noreferrer" class="text-bestblue hover:underline transition-colors inline-block mb-4">
+              support.bestwallet.com
+            </a>
+            <p class="text-sm text-gray-300">
+              For general inquiries:
+              <a href="mailto:info@bestwallet.com" class="text-bestblue hover:underline transition-colors ml-1">
+                info@bestwallet.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-400 mb-4 md:mb-0">
+              &copy; 2024 Best Wallet. All rights reserved.
+            </p>
+            <div class="flex flex-wrap justify-center">
+              <span class="text-xs text-gray-400 px-2">
+                Proudly partnering with:
+              </span>
+              <a href="#" class="text-xs text-gray-400 hover:text-gray-300 transition-colors px-2">Coinbase Venture</a>
+              <a href="#" class="text-xs text-gray-400 hover:text-gray-300 transition-colors px-2">Kraken</a>
+              <a href="#" class="text-xs text-gray-400 hover:text-gray-300 transition-colors px-2">Ledger</a>
+              <a href="#" class="text-xs text-gray-400 hover:text-gray-300 transition-colors px-2">Crypto.com</a>
+              <a href="#" class="text-xs text-gray-400 hover:text-gray-300 transition-colors px-2">Binance</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.classList.remove('bg-transparent', 'py-5');
+        navbar.classList.add('bg-bestblue-dark', 'py-3', 'shadow-md');
+      } else {
+        navbar.classList.add('bg-transparent', 'py-5');
+        navbar.classList.remove('bg-bestblue-dark', 'py-3', 'shadow-md');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Change icon
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenuButton.innerHTML = `
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        `;
+      } else {
+        mobileMenuButton.innerHTML = `
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        `;
+      }
+    });
+
+    // Language dropdown
+    // 使用let而不是const，并且不使用条件检查，直接赋值
+    let languageButton = document.getElementById('language-button');
+    let languageMenu = document.getElementById('language-menu');
+    languageButton.addEventListener('click', () => {
+      languageMenu.classList.toggle('hidden');
+    });
+    // Close language menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('#language-dropdown')) {
+        languageMenu.classList.add('hidden');
+      }
+    });
+
+    // Info popup toggle
+    const infoButton = document.getElementById('info-button');
+    const infoPopup = document.getElementById('info-popup');
+    
+    // 默认显示info-popup
+    infoPopup.classList.add('show');
+    
+    infoButton.addEventListener('click', () => {
+      infoPopup.classList.toggle('show');
+    });
+    
+    // 点击页面其他区域不关闭info-popup
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('#info-button') && !event.target.closest('#info-popup')) {
+        // 不做任何操作，保持popup的显示状态
+      }
+    });
+
+    // Countdown timer
+// 使用let声明变量，避免重复声明问题
+    let daysEl = document.getElementById('days');
+    let hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    let timeLeft = {
+      days: 0,
+      hours: 8,
+      minutes: 51,
+      seconds: 26
+    };
+
+    function updateCountdown() {
+      const formatTime = (time) => time.toString().padStart(2, '0');
+      
+      secondsEl.textContent = formatTime(timeLeft.seconds);
+      minutesEl.textContent = formatTime(timeLeft.minutes);
+      hoursEl.textContent = formatTime(timeLeft.hours);
+      daysEl.textContent = formatTime(timeLeft.days);
+
+      // Update time
+      timeLeft.seconds--;
+
+      if (timeLeft.seconds < 0) {
+        timeLeft.seconds = 59;
+        timeLeft.minutes--;
+
+        if (timeLeft.minutes < 0) {
+          timeLeft.minutes = 59;
+          timeLeft.hours--;
+
+          if (timeLeft.hours < 0) {
+            timeLeft.hours = 23;
+            timeLeft.days--;
+
+            if (timeLeft.days < 0) {
+              // Timer complete
+              clearInterval(countdownInterval);
+              return;
+            }
+          }
+        }
+      }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+
+    // Tab switching for Ecosystem section
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+        
+        // Update active tab button
+        tabButtons.forEach(btn => {
+          btn.classList.remove('bg-bestblue', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+        button.classList.add('bg-bestblue', 'text-white');
+        
+        // Show selected tab content
+        tabContents.forEach(content => {
+          content.classList.add('hidden');
+        });
+        document.getElementById(`${tabId}-content`).classList.remove('hidden');
+      });
+    });
+
+    // Accordion for FAQ section
+// 获取所有手风琴头部元素
+// 使用const声明手风琴头部元素，避免重复声明问题
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.classList.toggle('hidden');
+        
+        // Rotate icon
+        const icon = header.querySelector('.accordion-icon');
+        if (content.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Fade-in animation for elements when they come into view
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const fadeInObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeIn 0.5s forwards';
+          fadeInObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    fadeElements.forEach(element => {
+      fadeInObserver.observe(element);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "/home/page": "app/home/page.js",
+  "/juesetting/page": "app/juesetting/page.js",
+  "/device/page": "app/device/page.js",
+  "/page": "app/page.js"
+}

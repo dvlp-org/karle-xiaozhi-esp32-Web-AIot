@@ -1,0 +1,36 @@
+.breadcrumb {
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb span {
+  color: #666;
+  cursor: pointer;
+}
+
+.breadcrumb span:hover {
+  color: #1890ff;
+}
+
+.container {
+    padding: 0 1.5rem;
+    
+
+  /* padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+ 
+}
+.container-chrild {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+ 
+}
+
+.content-wrapper {
+  padding: 0 0rem;
+}

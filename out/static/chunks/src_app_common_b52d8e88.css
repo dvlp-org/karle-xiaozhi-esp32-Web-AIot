@@ -1,0 +1,33 @@
+/* [project]/src/app/common.css [app-client] (css) */
+.breadcrumb {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.breadcrumb span {
+  color: #666;
+  cursor: pointer;
+}
+
+.breadcrumb span:hover {
+  color: #1890ff;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.container-chrild {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.content-wrapper {
+  padding: 0 0;
+}
+
+/*# sourceMappingURL=src_app_common_b52d8e88.css.map*/
